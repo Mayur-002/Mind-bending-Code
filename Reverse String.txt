@@ -1,0 +1,32 @@
+Reverse String in Java:-
+
+-->>public class Reverse 
+{
+public static void main(String [] args)
+{
+  String str = "Hello";
+  
+ String reverse = "" ;  //empty String variable
+ 
+ for (int i=0;i<str.length();i++)
+ {
+     reverse = str.charAt(i)+reverse;
+     
+ }
+ System.out.println(reverse);
+ 
+}
+}
+
+>> Note:charAt method is a Java String class method that is used to retrieve the character at a specified index within a string
+
+>> logic =First Iteration (i=0):
+
+Str.charAt(0): 'H'
+reversedStr: 'H' + "" (concatenating 'H' to the empty string)
+After the first iteration: reversedStr: "H"
+Second Iteration (i=1):
+
+Str.charAt(1): 'e'
+reversedStr: 'e' + "H" (concatenating 'e' to the existing reversed string)
+After the second iteration: reversedStr: "eH"..... and so on.......
