@@ -1,0 +1,37 @@
+
+package Brainy;
+
+import java .util.Scanner;
+
+public class jugad
+{
+	public static void main(String args[])
+	{
+		System.out.println("enter some  string");
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		char [] chars =str.toCharArray();
+		int count =0;
+		for (int i=0;i<chars.length;i++)
+		{
+			char c=chars[i];
+
+			switch (c) 
+			{
+			case 'a':
+			case 'e':
+			case 'i':
+			case 'o':
+			case 'u':
+				count++;
+				break;
+			
+//			default:
+//				System.out.println("no vowel");
+			}
+
+
+		}
+			System.out.println("no of vowel in string="+count);
+	}
+}
