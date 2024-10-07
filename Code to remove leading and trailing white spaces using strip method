@@ -1,0 +1,8 @@
+public class WSRemover {
+
+    public static void main(String[] args) {
+        String s = " abc def ";
+        s = s.strip();  // Removes leading and trailing whitespace
+        System.out.println(s);
+    }
+}
